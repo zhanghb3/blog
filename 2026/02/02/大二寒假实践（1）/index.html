@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Haobo's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 8.1.1"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">goforitboy</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">文章分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Life/">Life</a></li><li><a class="category-link" href="/categories/Tech/">Tech</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="个人简介">
+		                个人简介
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/goforitboy" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/images/大二寒假实践（1）背景.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >大二寒假实践（1）</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>先把一些感悟和思考写在前面：</p>
+<p><strong>大模型的两大主流应用：大语言模型和具身智能</strong><br>大语言模型是输入text，输出text<br>计算机视觉cv是输入image，输出image或text（比如图像分类）<br>vlm是输入image和text，输出text<br>vlm加入真机也就是具身后，可以迁移为vla，也就是输出了action</p>
+<p>大模型的本质就是黑箱，这个黑箱里面有很多的参数和权重（NN，很像神经元加工信息的过程，神经元接收一个信息，以不同的权重在不同的路径上再发送出去），而我们训练模型的过程就是通过输入和期望的输出来把这个黑箱清晰化的过程，也就是确定这些权重和参数的过程，最后达到的效果就是输入一个东西之后，通过这个黑箱，输出我们想要的值。</p>
+<p>大语言模型是大模型中最核心的一种，也是现在发展非常快，且很成熟的一种，这源于我们人类之间的交流以语言为主，而这正对应着大语言模型训练极其需要的<strong>数据</strong>，而在具身领域，由于机器人与物理世界交互的成本很高，且标注也比较麻烦，因此具身智能领域之所以还没有得到一定的发展，根本原因在于<strong>数据量不足</strong>。</p>
+<p>举个简单的例子，现在具身领域比较有名的数据集是Google的一个比较大的数据集，包含大约4k个小时的视频，但是我们看一看训练gpt-2大语言模型的数据量，大致相当于是有4000k的视频量，这就差了3个数量级，而且这还是gpt-2，也就是仅仅是大语言模型中并不算成熟的一个。从这个例子就可以看出在具身领域，<strong>数据的缺少</strong>是目前并没有得到突破进展的重要原因，这也是为什么李飞飞教授当初构建imagenet，现在又极力强调空间智能和构建世界模型的重要性。</p>
+<p>在具身领域，有标注的数据是昂贵的，现在有很多数据标注的工厂，但这种重复性的任务本身没什么难度，因此我在想是否可以考虑在东南亚，非洲这种劳动力廉价的地区去开设这样的数据标注工厂，当然了，这又会与外贸有关，所以是一个比较复杂的工程。</p>
+<p>因此在我看来，这个大语言模型可以说是发展的已经很不错了，接下来如果想有什么质的飞跃，我是想不到了，但是要达到量的提升倒是不难，应用也不难，比如今年agent的爆火，在这里真想吐槽一句，像agent和工作流这种大语言模型的垂直应用是企业和大厂应该做的（而且其实也没啥技术壁垒，vibe coding起个挺吓人的名其实就是AI coding + 你在某一领域有专业知识和具体需求），如果科研界和学术界搞这种东西那还是别读了，直接就业去就完事了。</p>
+<p>而具身智能这一领域虽然很多人唱衰，但是我倒是觉得正是这些目前有头绪但是还没有什么根本的解决办法的领域，才是一个科研工作者应该做的，所以我很愿意投身于这个领域（至少现在是这样的）。</p>
+<p>最后再分享个我觉得贼有意思的事：有同学问张老师，说如果以后有一天机器人真的走进了人们的生活，那么他能够适应不同的生活场景吗，这个问题其实很常见，也点出了我们在具身智能领域努力的终点，也就是极强的泛化能力，换个名字可能就听过了，那就是具身智能领域的AGI。我觉得有意思的点就在于张老师的回答，他说他也不知道能不能做到，但是这就和传教一样，你首先要让自己相信一定能做到这一点，然后再极力的说服别人也相信一定可以做到这一点，这让我想到了融资的魅力，以及那些投身于具身智能的头部企业是如何拿到投资的（手动狗头）。</p>
+<p><strong>不管怎么说吧，也不管最后到底能不能，老子搞这个的，我是肯定信他能。</strong></p>
+<p>下面是今天的笔记</p>
+<h1 id="重新认识一下AI"><a href="#重新认识一下AI" class="headerlink" title="重新认识一下AI"></a>重新认识一下AI</h1><h2 id="What’s-the-key-to-AI"><a href="#What’s-the-key-to-AI" class="headerlink" title="What’s the key to AI ?"></a>What’s the key to AI ?</h2><p>认识逐步深入：<br>1.模型：深度学习——&gt;transformer<br>2.数据<br>3.芯片：英伟达<br>4.能源：电力<br>5.稀土：变压器（永磁铁）<br>从模型到物质的转变</p>
+<h2 id="What-changes-AI-brings-to-us"><a href="#What-changes-AI-brings-to-us" class="headerlink" title="What changes AI brings to us ?"></a>What changes AI brings to us ?</h2><p>迭代迅速，团队协作，AI coding</p>
+<h2 id="Foundation-models"><a href="#Foundation-models" class="headerlink" title="Foundation models"></a>Foundation models</h2><p>1.具身智能得以发展的重要驱动因素<br>2.泛化性，应用于新场景<br>3.自监督学习：自监督学习的核心思想是利用数据中的某些部分来预测其他部分。例如，在图像中，可能会把图像的一部分遮挡住，然后让模型去预测被遮挡的部分。在文本中，可能会将句子中的某些词隐藏起来，任务是预测这些缺失的词。<br>4.基于transformer</p>
+<h2 id="Task-specific-models"><a href="#Task-specific-models" class="headerlink" title="Task-specific models"></a>Task-specific models</h2><p>1.专一，单一应用场景下，特定任务<br>(插播一条：<br>MLP:多层感知机（Multi-Layer Perceptron），是最基础、最经典的神经网络模型之一。几乎所有深度学习模型（CNN、Transformer、LLM）里，都能看到它的影子。<br>输入层 → 隐藏层（1 层或多层） → 输出层<br>举个例子：<br>x &#x3D; [x1, x2, x3]        （输入）<br>↓<br>Linear + ReLU           （隐藏层 1）<br>↓<br>Linear + ReLU           （隐藏层 2）<br>↓<br>Linear                  （输出）<br>)</p>
+<h2 id="Why-Foundation-models-are-large"><a href="#Why-Foundation-models-are-large" class="headerlink" title="Why Foundation models are large ?"></a>Why Foundation models are large ?</h2><p>模型规模大了之后，会涌现出很多能力：</p>
+<h3 id="Scaling-law"><a href="#Scaling-law" class="headerlink" title="Scaling law:"></a>Scaling law:</h3><p>这是一条定律，指的是模型规模，数据量，总计算量增加，误差（loss）会变小<br>Scaling Law 的核心公式就是：loss &#x3D; 常数 + 规模的负幂次</p>
+<h3 id="In-context-learning"><a href="#In-context-learning" class="headerlink" title="In-context learning"></a>In-context learning</h3><p>In-Context Learning 指的是：模型在推理阶段，通过上下文中的示例或指令，表现出对新任务的适应能力，而无需参数更新。<br>这在小模型上是无法做到的，需要规模很大的模型</p>
+<h3 id="Instruction-tuning"><a href="#Instruction-tuning" class="headerlink" title="Instruction-tuning"></a>Instruction-tuning</h3><p>预训练完的模型只是具备了这些知识，知道一个一个的输出token，但是他并不知道怎么表达，因此需要instruction-tuning，这样才具备回答你问题的能力。</p>
+<h3 id="Chain-of-thought"><a href="#Chain-of-thought" class="headerlink" title="Chain-of-thought"></a>Chain-of-thought</h3><p>思维链，思维逻辑，一步一步的（step by step）将过程展开和拆解</p>
+<p>（Zero-shot：不给例子，只给任务说明，模型直接做   Few-shot：给1个或几个示例，模型照着学着做）</p>
+<p><strong>大模型是一个很宽泛的概念，比如大语言模型，金融相关的大模型，应用于具身智能的大模型等等。</strong></p>
+<h2 id="Example-of-Foudation-models"><a href="#Example-of-Foudation-models" class="headerlink" title="Example of Foudation models"></a>Example of Foudation models</h2><p><strong>评估</strong>在大模型领域很重要很重要，但在具身智能领域还没有得到广泛应用<br>如何评估：<br>1.benchmark test:用同一套“标准考试”，去实际跑模型并打分的过程<br>2.automatic evaluation:不靠人，用程序自动给模型“打分”<br>3.human votes:人评估和打分</p>
+<h1 id="Embodied-AI（具身智能）"><a href="#Embodied-AI（具身智能）" class="headerlink" title="Embodied AI（具身智能）"></a>Embodied AI（具身智能）</h1><p>1.大语言模型发展的很好，但一旦加上身体之后就很难让模型学习好，也就是<strong>具身层面的数据一是较难获得，二是很难让模型学习好</strong><br>2.具身并不一定是类人的，只要有身体就算具身</p>
+<p><strong>具身智能的产业链可以由汽车的产业链做一个小的改动后迁移过来。</strong><br><strong>具身智能短期之内还是实现不了AGI，这是外界还没认识到的（手动狗头）</strong></p>
+<h2 id="强化学习（RL）"><a href="#强化学习（RL）" class="headerlink" title="强化学习（RL）"></a>强化学习（RL）</h2><p>MDP:马尔可夫决策过程<br>强化学习里，你永远在做一个循环：<br>环境给状态s<br>智能体选动作a<br>环境返回 奖励 r 和下一个状态 s′<br>把经验(s,a,r,s′) 用来更新你的模型<br>重复很多次，让策略越来越好</p>
+<p>状态 s：你看到什么<br>动作 a：你怎么做<br>奖励 r：你做得好不好<br>策略 π：决定怎么选动作的规则</p>
+<h3 id="几种常见的算法和概念："><a href="#几种常见的算法和概念：" class="headerlink" title="几种常见的算法和概念："></a>几种常见的算法和概念：</h3><p><strong>DQN</strong>：<br>DQN 解决什么问题？<br>动作是离散的（比如 上&#x2F;下&#x2F;左&#x2F;右）<br>你想知道：在状态 𝑠 下选动作 𝑎 以后，未来能拿多少总奖励？<br>所以 DQN 学的是：𝑄(𝑠 , 𝑎) ≈ 从(𝑠 , 𝑎)开始的长期收益<br>核心想法：<br>用神经网络来近似 Q 表：输入状态 s，输出每个动作的 Q 分数。</p>
+<p><strong>A3C</strong>：<br>2.1 A3C 解决什么问题？<br>DQN 对连续动作不友好，所以 A3C 改思路： 直接学习策略 π(a|s)（在状态 s 下选动作 a 的概率&#x2F;分布），并且配一个 Critic 来估计状态价值：<br>𝑉(𝑠) ≈ 从 s 开始的长期收益<br>2.2 Actor-Critic 结构<br>Actor（演员）：输出动作（概率&#x2F;均值方差）<br>Critic（评论员）：评价当前状态值 𝑉(𝑠)</p>
+<p><strong>PPO</strong>：<br>Actor-Critic 最大的问题：策略更新太大就崩（训练突然坏掉）<br>PPO 的核心就一句： 每次更新策略，但限制新策略不要偏离旧策略太多</p>
+<p><strong>分布式AI</strong>：分布式 RL &#x3D; 用很多机器 &#x2F; 进程，同时帮一个智能体“刷经验 + 学模型”<br>Actor 拿当前策略 跑环境 采样 (s, a, r, s’) 不学习，只干活<br>Learner 收集所有 Actor 的数据 计算梯度 更新模型参数<br>采样和学习彻底解耦</p>
+<p><strong>Q-learning</strong>:学一个“打分函数”，告诉你：在某个状态下，做哪个动作最划算,Q(s, a) 就是一张“未来收益评分表”<br>Q-learning 的核心问题是现在做这个动作，长期来看值不值？<br>Q(s,a)&#x3D;在状态 s 下执行动作 a 后，未来能获得的期望总奖励</p>
+<p><strong>Buffer</strong>是用来存储智能体与环境交互得到的经验数据的地方</p>
+<p><strong>模型预训练</strong> &#x3D; 先用大量“通用数据”把模型训练成一个“有常识、有基础能力的人”，再让它去干具体工作。预训练不是为了“完成任务”，而是为了“学会世界的基本结构”。</p>
+<p><strong>diffusion model</strong>:学会“怎么把一团噪声一步一步擦干净，变成一张真实的东西”<br>它不是直接“生成图片”，而是学一个能力：在任意噪声程度下，判断现在这张图里，哪些是噪声，哪些是“真实结构”，然后去掉一点噪声，得到更干净的版本，重复很多次。</p>
+<p>在训练阶段：<br>每一次训练：<br>1.拿一张真实图片<br>2.随机加一点噪声（加多少随机）<br>3.把「加了噪声的图」丢给模型<br>4.让模型预测：我刚刚加进去的噪声是什么<br>让模型学会：“这种模糊 + 这种纹理，里面藏着的噪声大概是这样”，这一步重复 几亿次。</p>
+<p>在生成阶段：<br>从一张纯噪声开始<br>噪声<br>↓（模型：去掉一点噪声）<br>有点像图<br>↓<br>更像<br>↓<br>很像<br>↓<br>一张真实图片</p>
+<p>每一步都很小，很稳，所以生成质量非常高。这几乎也是目前最主流的在具身领域训练模型的方法。</p>
+<p><strong>模型的后训练</strong>：在具身领域，由于涉及真机，因此模型的后训练是很必要的：VLA的后训练 &#x3D; 在已经预训练好的“看得懂 + 听得懂”的模型上，进一步教它“怎么动、怎么更稳地动、怎么在真实世界动”。</p>
+<p><strong>Value Function（状态值）</strong><br>记作： V(s)<br>意思是： “在状态 s 这个位置，本身有多好？” ，它不关心你现在具体要做哪个动作，只关心“站在这儿值不值”。</p>
+<p><strong>VLA最标准,最重要的模型： openvla , π系列 , diffusion policy , ACT , smolvla</strong>，有时间可以去实践一下。</p>
+<h2 id="具身智能的六大趋势："><a href="#具身智能的六大趋势：" class="headerlink" title="具身智能的六大趋势："></a>具身智能的六大趋势：</h2><p><strong>1.from single task to pre-trained model<br>2.techniques to model action<br>3.to learn cross-embodiment knowledge<br>4.alleviate data scarcity problem<br>5.lower cost to involve more people in developing VLA<br>6.pre-training for generalization and post-training for proficiency</strong></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2026/02/02/%E5%A4%A7%E4%BA%8C%E5%AF%92%E5%81%87%E5%AE%9E%E8%B7%B5%EF%BC%881%EF%BC%89/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2026/02/02/%E5%A4%A7%E4%BA%8C%E5%AF%92%E5%81%87%E5%AE%9E%E8%B7%B5%EF%BC%881%EF%BC%89/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
