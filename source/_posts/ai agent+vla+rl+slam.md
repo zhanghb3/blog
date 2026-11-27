@@ -10,7 +10,7 @@ thumbnail: /images/ai_agent+vla+rl+slam背景.jpg # 略缩图
 这一部分我花了1-2天的时间实践了一下，用cursor构建了一个学习知识的agent: 你输入要学习的东西（比如transformer）,然后他会给你告诉你都有哪些学习内容，和学习路线，而且你还可以再把你的时间表给他发过去，他会根据你的空闲时间去为你安排每天的学习时间。（这个编程大模型现在实在是强，多强自己去试一下就知道了）
 
 <div style="text-align: center;">
-  <img src="/images/ustudy.png"  style="width: 700px;" />
+  <img src="{% site_url /images/ustudy.png %}"  style="width: 700px;" />
 </div>
 
 不过因为我这次本身也不是冲着完整的搭建一个学习软件去的，所以我这里只使用Opus4.5把基础框架和交互功能给搞了出来，能做出基础的学习内容和框架，但因为没继续优化，所以回答的也是一坨，而且没有一个成型的UI。而且还有一个原因，就是我就构建了一个基础框架，就花了6刀的额度，然后我再简单优化两下再试一下RAG，就到9刀了，这玩意强是真强，吞钱也是真吞钱。。
@@ -18,7 +18,7 @@ thumbnail: /images/ai_agent+vla+rl+slam背景.jpg # 略缩图
 然后我还简单试了一下分层的RAG（检索增强生成），理论上是可以自己添加学习资料了，然后比如你想学习某一部分的内容，llm会在你提供的资料里进行分层级的检索，然后把你想学的东西提取并整合，再发给你，那么分层级具体体现在哪里呢，可以看下面这张图。
 
 <div style="text-align: center;">
-  <img src="/images/分层级的RAG.png"  style="width: 700px;" />
+  <img src="{% site_url /images/分层级的RAG.png %}"  style="width: 700px;" />
 </div>
 
 当然了，这个所谓的分层级也就是我随便试了一试，所以功能肯定还不够完善，主要是通过这种方式来了解一下agent以及RAG吧。

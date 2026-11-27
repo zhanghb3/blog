@@ -38,7 +38,7 @@
 		        <!-- Pages 自定义   -->
 		        <% for (var i in theme.Nav.pages){ %>
 		        <li>
-		            <a href="<%= theme.Nav.pages[i].link %>" title="<%= i %>">
+		            <a href="<%= url_for(theme.Nav.pages[i].link) %>" title="<%= i %>">
 		                <%= i %>
 		            </a>
 		        </li>
